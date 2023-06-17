@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .product {
+  position: relative;
+  width: 200px; /* Định dạng kích thước cho sản phẩm */
+}
+
+.buttons {
+  position: absolute;
+  bottom: -50px; /* Định vị trí xuất hiện của button, từ dưới lên */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s, bottom 0.3s;
+}
+
+.product:hover .buttons {
+  opacity: 1;
+  bottom: 10px; /* Khi hover vào sản phẩm, button hiển thị lên */
+}
+
+.button {
+  background-color: #333; /* Màu nền của button */
+  color: #fff; /* Màu chữ của button */
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  transform: translateY(100%); /* Đẩy button xuống dưới */
+  transition: transform 0.3s;
+}
+
+.product:hover .button {
+  transform: translateY(0); /* Khi hover vào sản phẩm, button di chuyển lên */
+}
+
+.button i {
+  margin-right: 5px;
+}
+
+</style>
+<body>
+    <div class="product">
+        <img src="../images/kd2.jpg" alt="Product Image">
+        <div class="buttons">
+          <button class="button"><i class="fa fa-heart"></i></button>
+          <button class="button"><i class="fa fa-shopping-cart"></i></button>
+          <button class="button"><i class="fa fa-share"></i></button>
+        </div>
+      </div>
+      
+</body>
+</html>

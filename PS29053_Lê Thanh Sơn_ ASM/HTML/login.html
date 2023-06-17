@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trình đăng nhập</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/responsive-login.css">
+    <script src="../Trang web/js/checkform.js"></script>
+</head>
+<body>
+    <div class="baobu">
+        <form id="tieude" name="MyForm" onsubmit="return validateForm()" >
+            <div id="error-message"></div>
+            <h1 class="hello"> L O G I N </h1>
+            <div class="nhaplieu">
+                <i class="fa fa-user"></i>
+                <input type="text" class="hienthi" name="Ten" placeholder="Nhập tên">
+            </div>
+            <div class="nhaplieu">
+                <i class="fa fa-envelope"></i>
+                <input type="email" class="hienthi" name="email" placeholder="Nhập email">
+            </div>
+            <div class="nhaplieu">
+                <i class="fa fa-key"></i>
+                <input type="password" class="hienthi" name="password" placeholder="Nhập mật khẩu">
+            </div>
+            <div class="nhaplieu">
+                <i class="fab fa-keycdn"></i>
+                <input type="password" class="hienthi" name="confirmPassword" placeholder="Xác nhận mật khẩu">
+            </div>
+           
+            <input type="submit" onclick="validateForm();" value="ĐĂNG NHẬP" class="add">
+        </form>
+    </div>
+    <script src="../JS/login.js"></script>
+</body>
+</html>

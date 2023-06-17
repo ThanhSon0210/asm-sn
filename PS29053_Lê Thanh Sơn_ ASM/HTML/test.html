@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/fontawesome-free-6.2.1-web/css/all.css">
+    <title>Document</title>
+    <style>
+        .dark-or-light {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            transition: 2s ease;
+        }
+
+        body.dark {
+            background-color: rgb(0, 0, 0);
+            transition: 2s ease;
+        }
+
+        .checkbox {
+            width: 100px;
+            height: 50px;
+            background-color: white;
+            border-radius: 30px;
+            position: relative;
+            color: black;
+            overflow: hidden;
+            transform: rotate(90deg);
+        }
+
+        #checkbox_toggle {
+            display: none;
+        }
+
+        .checkbox .toggle {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            border-radius: 30px;
+            left: 5px;
+            cursor: pointer;
+            background: linear-gradient(90deg, #FF0080, #FF8C00 70%);
+            transition: 0.4s;
+            box-shadow: 0px 0px 10px rgb(255, 255, 20), 0px 0px 30px rgb(255, 255, 20);
+        }
+
+        .checkbox .slide {
+            width: 230px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            cursor: pointer;
+            border: #0a1929;
+        }
+
+        .checkbox .slide .text {
+            font-size: 16px;
+            font-weight: 700px;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        .slide .text i {
+            font-size: 3px;
+        }
+
+        .check:checked+.checkbox .slide .toggle {
+            transform: translateX(113px);
+            background: linear-gradient(40deg, #8983F7, #A3DAFB 70%);
+            box-shadow: -0px -0px 10px #8983F7, -0px -0px 30px #8983F7;
+        }
+
+        .check:checked+.checkbox .slide {
+            background-color: #0a1929;
+            color: #fff;
+        }
+
+        .box-filter {
+            background-image: conic-gradient(#488cfb,
+                    #29dbbc,
+                    #ddf505,
+                    #ff9f0e,
+                    #e440bb,
+                    #655adc,
+                    #488cfb);
+            transform: rotate(90deg);
+            padding: 5px;
+            border-radius: 50px;
+            animation: autoTurn 1s linear infinite;
+            animation-play-state: paused;
+        }
+
+        .box-filter:hover {
+            animation-play-state: running;
+
+        }
+
+        @keyframes autoTurn {
+            to {
+                filter: hue-rotate(1turn);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dark-or-light">
+        <div class="box-filter">
+            <input class="check" type="checkbox" id="checkbox_toggle">
+            <div class="checkbox">
+                <label for="checkbox_toggle" class="slide">
+                    <label for="checkbox_toggle" class="toggle"></label>
+                    <label for="checkbox_toggle" class="text"><i class="fa-solid fa-sun"></i></label>
+                    <label for="checkbox_toggle" class="text"><i class="fa-solid fa-moon"></i></label>
+                </label>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.checkbox').addEventListener("click", function () {
+            document.querySelector('body').classList.toggle('dark');
+        })
+    </script>
+</body>
+
+</html>

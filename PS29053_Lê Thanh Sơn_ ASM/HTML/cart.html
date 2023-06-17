@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="../CSS/cart.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/responsive-header&footer.css">
+    <link rel="stylesheet" href="../CSS/responsive-cart.css">
+    <title>Cart</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="thanhmenu">
+            <div id="top0"><h4>Tất cả sản phẩm sẽ được làm mới trong ngày!</h4></div>
+            <div id="menu">
+                <img class="logo" src="../images" alt="">
+                <a href="../HTML/index.html">TRANG CHỦ</a>
+                <a href="">TẤT CẢ SẢN PHẨM</a>
+                <a href="">PHỤ KIỆN</a>
+                <a href="">GIỚI THIỆU</a>
+                <a href=""><i class="fa fa-shopping-cart"></i></a>
+                <input type="text" placeholder="Tìm kiếm ... ">
+                <a href="login.html" class="login">LOGIN <i class="fa fa-user custom-cursor-on-hover"></i></a>
+            </div>
+
+
+            <label for="nav-mobile-input" class="nav-bar-btn">
+                <i class="fa fa-bars custom-cursor-on-hover"></i>
+        </label>
+        <div class="logo">
+            <img src="../images/logo-web.png" alt="" >
+        </div>
+
+        
+
+        <input type="checkbox" name="" hidden class="nav-input" id="nav-mobile-input">
+
+        <label for="nav-mobile-input" class="nav-overlay"></label>
+        <div class="nav-mobay">
+            <label for="nav-mobile-input" class="nav-mobile-close">
+                <i class="fa fa-times"></i>
+            </label>
+            <div id="menu-mobile">
+                <img class="logo" src="../images" alt="">
+                <a href="../HTML/index.html" class="nav-mobile-link"><i class="fa fa-home"></i> TRANG CHỦ</a>
+                <a href="" class="nav-mobile-link"><i class="fa fa-align-left custom-cursor-on-hover"></i> GIỚI THIỆU</a>
+                <a href="../HTML/cart.html" class="nav-mobile-link"><i class="fa fa-shopping-cart"></i> GIỎ HÀNG</a>
+                <a href="../HTML/login.html" class="nav-mobile-link"><i class="fa fa-user"></i> LOGIN</a>
+                
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <h1 class="text-my-cart">MY CART</h1><hr><br><br>
+
+    <table id="my-cart">
+        <thead>
+            <tr>
+               <th>Ảnh Sản Phẩm</th>
+               <th>Tên Sản Phẩm</th>
+               <th>Giá Sản Phẩm</th>
+               <th>Chức Năng</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <th  colspan="2" style="text-align: center">
+                    Tổng Tiền : 
+                </th>
+                <th id="tt" style="text-align: left">
+                    
+                </th>
+                <th>
+                    <button onclick="xoaAll()" style="text-align: left">Xóa Hết</button>
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+    
+
+        <div class="my-cart">
+            <div class="chuy">
+                <div class="chuy1">
+                    <div id="note-left">
+                        <h2>Ghi chú</h2><br>
+                        <textarea name="note"></textarea>
+                    </div>
+                </div>
+                <div class="chuy1">
+                    <strong>NOTE:</strong>
+                    <p>Vận chuyển và giảm giá được tính khi thanh toán. 
+                        KHÔNG bao gồm thuế và phí vận chuyển khu vực xa xôi như đã nêu trên trang 
+                        Chính sách vận chuyển của chúng tôi. Tất cả các đơn đặt hàng được xử lý bằng USD.
+                    </p>
+                    <br>
+                    <button onclick="dh()">ĐẶT HÀNG</button>
+                </div>
+            </div>
+        </div><br>
+
+        <footer>
+            <div class="hr"></div>
+            <div class="foter">
+                <div class="foter1">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-discord"></i>
+                </div>
+                <div class="foter2">
+                    <h4>K E Y C H R O N </h4>
+                    <ul>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Gift Cards</a></li>
+                        <li><a href="">Get 10% Off</a></li>
+                        <li><a href="">Where to Buy</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">ConTact Us</a></li>
+                        <li><a href="">Influencer Recruit</a></li>
+                        <li><a href="">Customize with Your Branding</a></li>
+                    </ul>
+                </div>
+                <div class="foter3">
+                    <h4>H E L P  &  S U P P O R T</h4>
+                    <ul>
+                        <li><a href="">User Manual</a></li>
+                        <li><a href="">Firmwares</a></li>
+                        <li><a href="">Help Center</a></li>
+                        <li><a href="">Order Tracking</a></li>
+                        <li><a href="">Shopping Policy</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">Refund policy</a></li>
+                        <li><a href="">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="foter4">
+                    <h4>B E  T H E  F I R S T  T O  K N O W</h4><br>
+                    <p>Get the latest product news,
+                         special offers and interesting behind-the-scenes stories from us
+                    </p><br>
+                    <input placeholder="✉️ Enter your email"  type="email">
+                </div>
+            </div>
+           <div id="cuoi"><img  src="../images/footer.jpg" alt=""></div> 
+        </footer>
+        <script src="../JS/cart.js"></script>
+</body>
+</html>

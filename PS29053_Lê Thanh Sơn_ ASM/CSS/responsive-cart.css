@@ -1,0 +1,56 @@
+@media (max-width: 992px){
+    body{
+        width: 96%;
+        margin: auto;
+    }
+    .thanhmenu{
+        background-color: rgb(194, 194, 194);
+        position: fixed;
+        width: 96%; 
+        margin: auto;
+        z-index: 99;
+    }
+    .nav-bar-btn i{
+        width: 100px;
+        margin-left: 15px;
+        display: block;
+    }
+    #menu a,input{
+        display: none;
+    }
+
+    .product-reviews{
+        margin-top: 400px;
+    }
+    .chuy{
+        grid-template-columns: 1fr;
+        height: 250px;
+        gap: 20px;
+    }
+    #note-left{
+        margin-left: 0%;
+    }
+    footer{
+        margin-top: 150px;
+    }
+    .foter1{
+        display: none;
+    }
+    #cuoi img{
+        display: none;
+    }
+}
+
+@media (max-width : 500px){
+    .chuy{
+        grid-template-columns: 1fr;
+    }
+    #note-left{
+        margin-left: 0%;
+    }
+    .hr{
+        margin-top: 150px;
+        background-color: black;
+        height: 1px;
+    }
+}

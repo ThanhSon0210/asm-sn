@@ -1,0 +1,253 @@
+@media (max-width: 992px){
+    body{
+        width: 96%;
+        margin: auto;
+    }
+    .thanhmenu{
+        background-color: rgb(194, 194, 194);
+        position: fixed;
+        width: 96%; 
+        margin: auto;
+        z-index: 99;
+    }
+    .nav-bar-btn i{
+        width: 100px;
+        margin-left: 15px;
+        display: block;
+    }
+    #menu a,input{
+        display: none;
+    }
+    div.dm{
+        text-align: center;
+    }
+    .banner {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+    .image-banner {
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .image-banner img {
+        margin-left: 7%;
+        width: 86%;
+        height: 390px;
+    }
+    .prev, .next {
+        display: none;
+    }
+    #dssp{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px; 
+        row-gap: 40px;
+    }
+    .bestsell{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-reviews{
+        margin-top: 400px;
+    }
+   
+
+    .foter1{
+        display: none;
+    }
+    .foter{
+        grid-template-columns: auto auto  auto;
+        
+    }
+
+}
+
+
+@media(max-width: 500px){
+    body{
+        width: 90%;
+        margin: auto;
+    }
+    .thanhmenu{
+        background-color: rgb(194, 194, 194);
+        position: fixed;
+        width: 90%; 
+        margin: auto;
+        z-index: 99;
+    }
+    .nav-bar-btn i{
+        width: 100px;
+        margin-left: 15px;
+        display: block;
+    }
+    #menu a,input{
+        display: none;
+    }
+    div.dm{
+        text-align: center;
+    }
+    .logo img{
+        width: 12%;
+        position: fixed;
+        left: 80%;
+        top: 25px;
+    }
+    .banner{
+        display: none;
+    }
+    #dssp{
+        grid-template-columns: 1fr;
+    }
+    .onesp{
+        border: 0.5px solid rgb(225, 224, 224);
+        text-align: center;
+        width: 80%;
+        height: 400px;
+        margin-left: 10%;
+    }
+    .onesp img{
+        padding: 40px;
+        width: 100%;
+        height: 200px;
+    }
+    .onesp h6{
+        font-size: 15px;
+        margin-top: 10px;
+        margin-right: 300px;
+    }
+    .onesp h1{
+      display: none;
+    }
+    #khungYES{
+        margin-left: 2%;
+        border: 1px solid rgb(255, 255, 255);
+        width: 96%;
+        height: 300px;
+        background-image: url(../images/login.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .text{
+        border-radius: 5px;
+        text-align: center;
+        width: 250px;
+        height: 190px;
+    }
+    .text h1{
+        font-size: x-large;
+    }
+
+    .text button{
+        border-radius: 5px;
+        color: white;
+        width: 100px;
+        padding: 8px;
+        background-color: black;
+        font-size: 0.7em;
+        font-weight: bolder;
+    }
+    .text button:hover{
+        transform: scale(1.1);
+        transition: 0.75s;
+        cursor: pointer;
+    }
+    
+    .product-reviews{
+        margin-top: 1400px;
+    }
+    
+    .bestsell{
+        margin-left: 5%;
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+    .onesell h4{
+        text-align: center;
+        border: 1px solid;
+        width: 100px;
+        padding: 5px; 
+        background-color: rgb(222, 29, 29); 
+        color: white; 
+        
+    }
+    .onesell img{
+        width: 100%;
+    }
+
+
+    .reviews1{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .childreviews img{
+        width: 80%;
+        margin-left: 10%;
+    }.childreviews h2{
+        font-size: x-large;
+    }
+    .childreviews p{
+        font-weight: lighter;
+
+        width: 80%;
+    }
+
+
+
+    .Blog-posts{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 100px;
+        height: 500px;
+    }
+    .one-Blog-posts1 img{
+        margin-left: 5%;
+        width: 90%;
+        cursor: pointer;
+    }
+    .one-Blog-posts1 h3, h2{
+        margin-left: 5%;
+        width: 90%;
+    }
+    #cuoi img{
+        display: none;
+    }
+
+    /* Footer */
+    .gach-hr{
+        background-color: rgb(0, 0, 0);
+        height: 1px;
+        margin-top: 600px;
+    }
+    .foter{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 500px;
+    }
+    .foter h4{
+        width: 100%;
+        color: red;
+    }
+    .foter1{
+        display: none;
+    }
+    .foter3{
+        width: 200px;
+    }
+}
+
+
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
